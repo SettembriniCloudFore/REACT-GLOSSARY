@@ -1,0 +1,47 @@
+
+$borderColor:rgb(186, 210, 147);
+
+
+.main-container{
+
+    width: 70vh;
+    margin: 0 auto auto;
+    height: 40em;
+    width: 70em;
+    border-radius: 5px;
+    margin-bottom: 30vh;
+
+    display:grid;
+    grid-gap: 10px;
+    grid-template-rows: 30em 20em;
+
+    .inner{
+        border: 2px solid darken($borderColor, 40%);
+        border-radius: .3em;
+    }
+
+    .hero-image{
+        grid-row: 1;
+        grid-column: 1/span 5;
+    }
+    .login-form{
+        grid-row: 1;
+        grid-column: 6/span 2;
+    }
+    .bottom-cards{
+        grid-row: 2;
+        grid-column: 1/span 6;
+    }
+    .track-form{
+        grid-row: 2;
+        grid-column: 7/ span 1;
+    }
+ 
+    
+
+    
+
+
+
+
+}

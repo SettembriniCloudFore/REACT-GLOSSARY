@@ -1,0 +1,254 @@
+.menu{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0;
+    transform: translateX(-130%);
+    transition: all 0.5s;
+    z-index:10;
+}
+
+.menu.active{
+    transform: translateX(0);
+
+}
+
+.menu.closed{
+    transform: translateX(-130%);
+    transition: all 1s;
+}
+
+.blur{
+    width: 100vw;
+    height: 100vh;
+    left: 22%;
+    position: absolute;
+
+
+}
+
+.line {
+    position: relative;
+    border-bottom: 2px solid rgb(40, 75, 149);
+    padding: 1em;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; /* Добавлено */
+  }
+  
+
+.line span{
+    position: absolute;
+    left: 20px;
+    margin: auto auto;
+    display: flex;
+    border-radius: 60px;
+    padding: 0px 10px 5px 10px;
+    font-weight: bold;
+    font-size: .6em;
+    align-self: center;
+}
+
+
+
+.line span:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    box-shadow: 0px 0px 3px 3px rgba(40, 63, 92, 0.5);
+
+  }
+
+
+  
+.one-line{
+    transition: transform 0.3s linear;
+}
+
+.open {
+    transform: rotateX(180deg);
+}
+
+.h3-wrap{
+    
+    display: flex;
+    justify-content: center;
+    flex: 10;
+}
+
+.menu-content{
+    width: 22%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-width: 20em;
+}
+
+.menu-header{
+    font-size: 2rem;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+ul li a {
+    color:white;
+    text-decoration: none;
+    font-size: 1.3rem;
+ 
+    
+
+}
+.browser-link{
+    width: 90%;
+}
+
+ul li{
+    display: flex;
+    align-items: center;
+    min-width: 80%;
+}
+
+.menu-iteming{
+display: flex;
+align-items: center;
+}
+.menu-iteming >span:nth-of-type(2){
+    margin-top: -11px;
+    background-color: transparent;
+    flex: 1;
+    border-bottom: 2px white dotted;
+    color: transparent;
+}
+
+ul{
+    margin-top: 2vmin;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    justify-content: flex-start;
+    gap: .4em;
+}
+
+
+.one-line{
+    font-size: 1.5em !important;
+}
+.dropdown{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: aliceblue;
+    cursor: pointer;
+    margin-left: 2em;
+    
+
+}
+
+.inner-icon{
+    font-size: 1.5em !important;
+    flex-shrink: 0; 
+  
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 30;
+  
+}
+
+
+
+@media (max-width:700px) {
+    .menu-content{
+        width: 100vw;
+        height: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        min-width: 20em;
+        
+    }
+}
+
+.opener{
+    width: 100px;
+}
+
+ .burg-open:hover + .arrow,
+ .arrow:hover{
+    
+    transform: translateX(-20px);
+    transition: all 0.5s ease;
+    background-color: white;
+    padding: 5px 0px 5px 5px;
+    z-index: 3;
+    clip-path: polygon(9% 50%, 47% 10%, 
+    100% 0%, 100% 100%, 46% 90%);
+    font-size: 3.4vmin !important;
+
+}
+
+
+.burger-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 4px;
+   
+   
+}
+
+.burg-open{
+    position: absolute;
+    text-align: center;
+    z-index: 0;
+   
+}
+
+
+
+ .arrow{
+    font-size: 3.4vmin !important;
+    margin-left: 90px;
+    max-width: 30px;
+    
+  }
+  
+
+.burger-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+}
+
+.burger-button{
+    margin-left: 8vmax;
+    margin-top: 2.5em;
+    cursor: pointer;
+    padding-right: -20px;
+    flex:3;
+    text-align: center;
+    max-width: 100px;
+}
+
+.--link-module{
+    color: white;
+    margin:5vh 0px -15px 1.65em;
+    font-size: larger;
+}
+

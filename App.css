@@ -1,0 +1,153 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+:root{
+  --font-root:0.875rem;
+  --font-oswald: 'Oswald', sans-serif;
+}
+*,
+::after,
+::before{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.react-introduction{
+  height: 13em;
+  
+}
+
+.header-top{
+  padding-top: 1em;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 100%;
+  overflow: visible;
+  border-bottom: solid hsl(210, 57%, 37%);
+}
+
+.react-logo{
+  width: 5em;
+  height: 5em;
+  align-self: center;
+  border-radius: 20px;
+  animation:rotateAnimation 8s linear infinite;
+  position: relative;
+  top: .3em;
+}
+
+
+  
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.header-top h1{
+  /* margin-right: 3em; */
+  font-size: calc(var(--font-root) + 3em);
+  cursor:default;  
+
+}
+
+.h1-wrap{
+
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 4;
+  gap: 0;
+  padding-top: 1.5em;
+}
+
+
+.en-ru{
+  flex-grow: 1;
+  text-align: center;
+  font-family: var(--font-oswald);
+  padding-top: 1em;
+  font-size: calc(var(--font-root) + 1em)
+}
+
+
+.material-symbols-outlined {
+  font-size: 4em;
+  font-variation-settings:
+  'FILL' 50,
+  'wght' 400,
+  'GRAD' -1,
+  'opsz'10
+}
+
+
+
+
+
+
+@media (min-width:1600px) {
+  .line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.2em;
+  }
+  
+}
+
+
+
+@media(max-width:1024px){
+
+  .line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3em;
+  
+  }
+
+
+  @media(max-width:996px){
+   
+
+.en-ru{
+  flex-grow: 2;
+  font-size: 1.5em;
+  margin-right: 0.6em;
+
+}
+
+
+.h1-wrap{
+
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 3;
+  margin-right: 1.5em;
+  flex-shrink: 0;
+  
+ 
+}
+
+.header-top h1{
+  
+font-size: calc(var(--font-root) + 2em);
+position: relative;
+top: .4em;
+
+}
+
+
+
+
+  }}

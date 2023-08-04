@@ -1,0 +1,16 @@
+.main-container {
+  width: 70vh;
+  margin: 0 auto auto;
+  border: 2px solid black;
+  height: 40em;
+  width: 70em;
+}
+.main-container .text-main {
+  text-align: center;
+  margin-top: 10vh;
+  transition: all 1.5s linear;
+}
+.main-container .text-main:hover {
+  transform: scale(2);
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
